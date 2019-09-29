@@ -1,5 +1,6 @@
-contextPath: /
-port: 8080
+server:
+  context-path: /banking
+  port: 8080
 
 spring:
   jackson:
@@ -10,3 +11,8 @@ spring:
     serialization:
       write-dates-as-timestamps: false
 
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: Bank
