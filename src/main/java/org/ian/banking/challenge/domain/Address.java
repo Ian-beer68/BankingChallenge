@@ -13,7 +13,7 @@ public class Address {
     private String city;
     @NotNull
     @NotEmpty
-    private String Country;
+    private String country;
 
     public Address(@NotNull @NotEmpty String addressLine1,
                    String addressLine2,
@@ -22,7 +22,7 @@ public class Address {
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
         this.city = city;
-        Country = country;
+        this.country = country;
     }
 
     public String getAddressLine1() {
@@ -38,6 +38,6 @@ public class Address {
     }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 }
