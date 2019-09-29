@@ -23,7 +23,7 @@ public class Account {
         this.balanceStatus = balanceStatus;
         this.dateCreated = dateCreated;
         this.balance = balance;
-        balance.setScale(2, RoundingMode.CEILING);
+        balance = balance.setScale(2, RoundingMode.CEILING);
         this.accountType = accountType;
     }
 
