@@ -1,0 +1,12 @@
+contextPath: /
+port: 8080
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ssZ
+    time-zone: Europe/London
+    mapper:
+      use-getters-as-setters: false
+    serialization:
+      write-dates-as-timestamps: false
+
