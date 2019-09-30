@@ -2,6 +2,7 @@ package org.ian.banking.challenge.domain;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.Objects;
 
 public class Address {
     @NotNull
@@ -39,5 +40,20 @@ public class Address {
 
     public String getCountry() {
         return country;
+    }
+
+    @Override
+    public String toString() {
+        return Objects.toString(this);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return Objects.equals(this, o);
     }
 }

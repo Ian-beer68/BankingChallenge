@@ -14,6 +14,7 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public String createNewClient(Client client) {
+        logger.debug("creating new client {}", client);
         return null;
     }
 }

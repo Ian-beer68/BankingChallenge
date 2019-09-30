@@ -3,6 +3,7 @@ package org.ian.banking.challenge.domain;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Account {
     private enum BalanceStatus{DR, CR};
@@ -55,5 +56,20 @@ public class Account {
 
     public AccountType getAccountType() {
         return accountType;
+    }
+
+    @Override
+    public String toString() {
+        return Objects.toString(this);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return Objects.equals(this, o);
     }
 }
